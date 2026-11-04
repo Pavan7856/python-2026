@@ -1,9 +1,15 @@
-# My First Python Program
-# पहिला पायथन प्रोग्राम
+try:
+    a = int(input("Enter first number: "))
+    b = int(input("Enter second number: "))
 
-def main():
-    print("Hello, World!")
-    print("Welcome to Python 2026 with pavan rathod!")
+    result = a / b
+    print("Result:", result)
 
-if __name__ == "__main__":
-    main()
+except ValueError:
+    print("Please enter numbers only")
+
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
+except Exception:
+    print("Something went wrong")
